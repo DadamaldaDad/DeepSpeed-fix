@@ -12,9 +12,9 @@ namespace cg = cooperative_groups;
 #define MAX_SEQ 2048
 
 // only used to avoid compilation error due to lack of definition.
-#ifndef BF16_AVAILABLE
-using __nv_bfloat162 = __half2;
-#endif
+// #ifndef BF16_AVAILABLE
+// using __nv_bfloat162 = __half2;
+// #endif
 
 inline __device__ float gelu(const float x)
 {
